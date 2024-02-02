@@ -1,43 +1,88 @@
-$font-stack: Helvetica, sans-serif;
-$primary-color: #333;
+@font-face {
+  font-weight: 300;
+  font-family: Roboto;
+  src: url("/src/fonts/Roboto-Light.ttf");
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: Roboto;
+  src: url("/src/fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: Roboto;
+  src: url("/src/fonts/Roboto-Medium.ttf");
+}
+
+@font-face {
+  font-weight: 900;
+  font-family: Roboto;
+  src: url("/src/fonts/Roboto-Black.ttf");
+}
+
+
+$font-stack: Roboto, sans-serif;
+$primary-color: #000;
+$second-color: #fff;
 
 body {
   font: 100% $font-stack;
   color: $primary-color;
+  margin: 0;
 }
 
-nav {
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+header {
+  background: linear-gradient(224.42deg, rgba(46, 49, 146, 0.7) 0%, rgba(212, 20, 90, 0.7) 98.165%);
+  display: flex;
+  color: $second-color;
+}
+header {
+  .header-phones {
+    margin-left: 128px;
+    margin-top: 31px;
+    margin-bottom: 26px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    a {
+      color: $second-color;
+      text-decoration: none;
+      font-weight: 500;
+      line-height: 9.5px;
+    }
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  } 
+  .header-location {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 26px;
+    margin-bottom: 26px;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    img {
+      width: 15px;
+      height: 25px;
+    }
+    span {
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 16px;
+    }
   }
-
-  li {
-    display: inline-block;
+  .header-instagram {
+    margin-left: auto;
+    margin-right: 90px;
+    margin-top: 23px;
+    margin-bottom: 25.7px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
   }
-
-  a {
-    display: block;
-    padding: 6px 12px;
-    text-decoration: none;
-  }
-}
-
-@mixin theme($theme: DarkGray) {
-  background: $theme;
-  box-shadow: 0 0 1px rgba($theme, .25);
-  color: #fff;
-}
-
-.info {
-  @include theme;
-}
-
-.alert {
-  @include theme($theme: DarkRed);
-}
-
-.success {
-  @include theme($theme: DarkGreen);
 }
