@@ -84,5 +84,148 @@ header {
     display: flex;
     align-items: center;
     gap: 15px;
+    img {
+      width: 30px;
+      height: 28.3px;
+    }
+    span {
+      max-width: 128px;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 14px;
+    }
   }
 }
+
+.main-information {
+  padding-left: 122px;
+  padding-top: 47px;
+  padding-right: 87px;
+  padding-bottom: 25px;
+  position: relative;
+}
+
+  .main-information-navigation {
+    display: flex;
+    align-items: center;
+    margin-right: 35px;
+
+    img {
+      width: 100.01px;
+      height: 59.97px;
+      color: linear-gradient(90.00deg, rgb(184, 0, 95) 9.242%, rgb(0, 255, 255) 210.4%);
+      margin-right: 11px;
+    }
+
+    span {
+      font-size: 36px;
+      font-weight: 900;
+      line-height: 42px;
+      font-style: italic;
+    }
+
+  .list-nav {
+    margin-left: auto;
+    margin-top: 1px;
+    .list-item {
+      display: inline-block;
+      list-style-type: none;
+      margin-right: 25px;
+      a {
+        text-decoration: none;
+        color: $primary-color;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 21px;
+      }
+    }
+    .list-item:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+
+.main-information-order {
+  margin-top: 189px;
+  position: relative;
+  z-index: 1;
+  h1 {
+    max-width: 676px;
+    font-size: 50px;
+    font-weight: 900;    
+    line-height: 59px;
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 28px;
+    margin-bottom: 5px;
+    height: 43px;
+  }
+  button {
+    width: 179px;
+    height: 53px;
+    border-radius: 7px;
+    background: linear-gradient(135.87deg, rgb(185, 1, 96) 2.23%, rgb(46, 49, 146) 99.506%);
+    color: $second-color;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 23px;
+  }
+}
+
+.main-information-undercover-image {
+  position: absolute;
+  right: 87px;
+  top: 141px;
+  width: 745px;
+  height: 522px;
+  background: url('/src/img/undercover1.png');
+  transform: rotate(-180.00deg);
+}
+
+.main-information-rug-image {
+  position: absolute;
+  top: 141px;
+  right: 87px;
+  width: 745px;
+  height: 522px;
+  background: url(/src/img/rug1.png);
+  transform: rotate(-180.00deg);
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 0;
+}
+
+.main-section-vector {
+  fill: linear-gradient(155deg, #d4145a 0%, #2e3192 100%);
+  position: absolute;
+}
+
+.main-section-vector-1 {
+  top: 236px;
+  left: 418.99px;
+}
+
+.main-section-vector-2 {
+  top: 244.99px;
+  left: 439.99px;
+}
+
+.main-section-vector-3 {
+  top: 578px;
+  left: 142.99px;
+}
+
+.main-section-vector-4 {
+  top: 632px;
+  left: 172px;
+}
+
+.main-section-vector-5 {
+  top: 610px;
+  left: 85.98px;
+}
+
