@@ -1,25 +1,25 @@
 @font-face {
   font-weight: 300;
   font-family: Roboto;
-  src: url("/src/fonts/Roboto-Light.ttf");
+  src: url("./src/fonts/Roboto-Light.ttf");
 }
 
 @font-face {
   font-weight: 400;
   font-family: Roboto;
-  src: url("/src/fonts/Roboto-Regular.ttf");
+  src: url("./src/fonts/Roboto-Regular.ttf");
 }
 
 @font-face {
   font-weight: 500;
   font-family: Roboto;
-  src: url("/src/fonts/Roboto-Medium.ttf");
+  src: url("./src/fonts/Roboto-Medium.ttf");
 }
 
 @font-face {
   font-weight: 900;
   font-family: Roboto;
-  src: url("/src/fonts/Roboto-Black.ttf");
+  src: url("./src/fonts/Roboto-Black.ttf");
 }
 
 
@@ -184,7 +184,7 @@ header {
   top: 141px;
   width: 745px;
   height: 522px;
-  background: url('/src/img/undercover1.png');
+  background: url('./src/img/undercover1.png');
   transform: rotate(-180.00deg);
 }
 
@@ -194,7 +194,7 @@ header {
   right: 87px;
   width: 745px;
   height: 522px;
-  background: url(/src/img/rug1.png);
+  background: url('./src/img/rug1.png');
   transform: rotate(-180.00deg);
   background-repeat: no-repeat;
   background-position: center;
@@ -326,8 +326,8 @@ header {
     margin: auto;
     width: 93px;
     height: 106px;
-    background-image: url('/src/img/otz2_1.jpg');
-    mask-image: url('/src/img/Vector.png');
+    background-image: url('./src/img/otz2_1.jpg');
+    mask-image: url('./src/img/Vector.png');
     img {
       width: 93px;
       height: 106px;
@@ -370,10 +370,10 @@ header {
 
 .review{
 .masked-last {
-  background-image: url('/src/img/otz3_1.jpg');
+  background-image: url('./src/img/otz3_1.jpg');
 }
 .masked-first {
-  background-image: url('/src/img/otz1_1.jpg');
+  background-image: url('./src/img/otz1_1.jpg');
 }
 }
 
