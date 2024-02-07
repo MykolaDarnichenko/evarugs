@@ -21,6 +21,7 @@
 body {
   font: 100% Roboto, sans-serif;
   color: #000;
+  box-sizing: border-box;
   margin: 0;
 }
 
@@ -160,6 +161,7 @@ header .header-instagram span {
   font-size: 20px;
   font-weight: 900;
   line-height: 23px;
+  text-transform: uppercase;
 }
 
 .main-information-undercover-image {
@@ -213,6 +215,226 @@ header .header-instagram span {
 .main-section-vector-5 {
   top: 610px;
   left: 85.98px;
+}
+
+.about-rugs {
+  margin-top: 113px;
+  position: relative;
+}
+.about-rugs h2 {
+  padding-top: 25px;
+  font-weight: 400;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 120px;
+}
+.about-rugs h2 span {
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #b90160 0%, #3d5bf5 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-rugs-flex {
+  display: flex;
+  justify-content: center;
+  gap: 61px;
+  margin-bottom: 225px;
+}
+
+.about-rugs-card {
+  z-index: 1;
+  border-radius: 9px;
+  width: 344px;
+  height: 414px;
+  background: #fff;
+  box-shadow: 0 0 40px 0 rgba(184, 0, 95, 0.2);
+}
+.about-rugs-card img {
+  width: 100%;
+  height: 220px;
+  border-radius: 9px 9px 0 0;
+}
+.about-rugs-card h3 {
+  font-weight: 700;
+  line-height: 42px;
+  font-size: 36px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 22px;
+  padding-right: 33px;
+}
+.about-rugs-card p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: #767676;
+  margin-bottom: 10px;
+  padding-left: 22px;
+  padding-right: 33px;
+}
+
+.about-rugs-vector {
+  position: absolute;
+  fill: linear-gradient(180deg, #d4145a 0%, #2e3192 100%);
+  top: 183px;
+  left: 0;
+  z-index: 0;
+}
+
+.review {
+  background: linear-gradient(141.88deg, rgba(212, 20, 90, 0.25) 0.926%, rgba(46, 49, 146, 0.25) 104.886%);
+  height: 357px;
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  overflow-x: hidden;
+}
+
+.review-card {
+  box-sizing: border-box;
+  flex-shrink: 0;
+  margin-top: 98px;
+  padding: 63px 44px 0;
+  position: relative;
+  border-radius: 9px;
+  width: 536px;
+  height: 187px;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.25);
+  background: #fff;
+  text-align: center;
+}
+.review-card .masked {
+  position: absolute;
+  top: -60px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 93px;
+  height: 106px;
+  background-image: url("/src/img/otz2_1.jpg");
+  mask-image: url("/src/img/Vector.png");
+}
+.review-card .masked img {
+  width: 93px;
+  height: 106px;
+}
+
+.review-text {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 21px;
+}
+
+.review-text::after {
+  display: block;
+  content: "";
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 130px;
+  height: 2px;
+  background-image: linear-gradient(rgb(212, 20, 90), rgb(61, 91, 245));
+}
+
+.review-author {
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 15px;
+  color: rgb(142, 142, 142);
+  margin-bottom: 20px;
+}
+
+.review-card-first,
+.review-card-last {
+  opacity: 0.4;
+  padding-top: 77px;
+}
+
+.review .masked-last {
+  background-image: url("/src/img/otz3_1.jpg");
+}
+.review .masked-first {
+  background-image: url("/src/img/otz1_1.jpg");
+}
+
+footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 141px;
+  position: relative;
+  padding-top: 172px;
+  padding-bottom: 84px;
+}
+
+.footer-social-sites h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+.footer-social-sites img {
+  width: 33px;
+  height: 33px;
+}
+
+.footer-contact-phones h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.footer-contact-phones ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.footer-contact-phones a {
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 68%;
+  color: #000;
+}
+
+.footer-about-us h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.footer-about-us ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+.footer-about-us li {
+  max-width: 224px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 114%;
+  padding-bottom: 10px;
+}
+.footer-about-us li:last-child {
+  padding-bottom: 0;
+}
+.footer-about-us a {
+  text-decoration: none;
+  color: #000;
+}
+
+.footer-vector-first {
+  position: absolute;
+  top: 82px;
+  left: 75px;
+}
+
+.footer-vector-second {
+  position: absolute;
+  top: 19px;
+  right: 116px;
 }
 
 /*# sourceMappingURL=style.css.map */
