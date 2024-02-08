@@ -479,6 +479,7 @@ footer {
   }
   .main-information .main-information-navigation {
     justify-content: center;
+    margin-bottom: 0;
   }
   .main-information .main-information-navigation img {
     width: 60px;
@@ -531,6 +532,47 @@ footer {
     height: 255px;
     background-size: contain;
     transform: rotate(180deg);
+  }
+  .about-rugs {
+    margin-top: -23px;
+    padding: 0;
+  }
+  .about-rugs h2 {
+    margin-top: 0;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 54px;
+  }
+  .about-rugs .about-rugs-flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 103px;
+  }
+  .about-rugs .about-rugs-card {
+    width: 264px;
+    height: 363px;
+    padding-bottom: 21.71px;
+  }
+  .about-rugs .about-rugs-card img {
+    width: 264px;
+    height: 182px;
+    margin-bottom: 0;
+  }
+  .about-rugs .about-rugs-card h3 {
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 30px;
+  }
+  .about-rugs .about-rugs-card p {
+    margin-top: 5px;
+    font-weight: 300;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  .about-rugs .about-rugs-vector {
+    display: none;
   }
 }
 
