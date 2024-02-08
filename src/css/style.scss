@@ -460,7 +460,7 @@ footer {
 }
 
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 768px) {
   header {
     padding: 22px 0 11px;
     margin: 0;
@@ -470,8 +470,8 @@ footer {
     display: none;
   } 
   .header-phones {
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     margin: 0;
     a {
       font-weight: 500;
@@ -484,6 +484,11 @@ footer {
   }
   .header-instagram {
     display: none;
+    span {
+      font-weight: 300;
+      font-size: 17px;
+      line-height: 94%;
+    }
   }
 }
 }
