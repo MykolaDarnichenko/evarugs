@@ -168,6 +168,7 @@ header {
   button {
     width: 179px;
     height: 53px;
+    border: none;
     border-radius: 7px;
     background: linear-gradient(135.87deg, rgb(185, 1, 96) 2.23%, rgb(46, 49, 146) 99.506%);
     color: $second-color;
@@ -461,9 +462,6 @@ footer {
 
 
 @media screen and (max-width: 768px) {
-  body {
-    max-width: 768px;
-  }
   header {
     padding: 22px 0 11px;
     margin: 0;
@@ -494,5 +492,68 @@ footer {
     }
   }
 }
+  .main-information {
+    text-align: center;
+    padding: 26px 0 53px;
+    margin: 0;
+    .list-nav {
+      display: none;
+    }
+    .main-information-navigation {
+      justify-content: center;
+      img {
+        width: 60px;
+        height: 36px;
+      }
+      span {
+        font-weight: 900;
+        font-size: 18px;
+      }
+    }
+    .main-information-order {
+      margin: 0;
+      padding: 0;
+      h1 {
+        max-width: 194px;
+        margin: 38px auto 8px;
+        font-weight: 900;
+        font-size: 25px;
+        line-height: 100%;
+        text-align: center;
+      }
+      p {
+        margin-top: 8px;
+        margin-bottom: 0;
+        font-weight: 300;
+        font-size: 20px;
+        height: auto;
+      }
+      button {
+        border: none;
+        border-radius: 7px;
+        margin-top: 9px;
+        width: 93px;
+        height: 28px;
+        font-weight: 900;
+        font-size: 10px;
+        background: linear-gradient(136deg, #b90160 0%, #2e3192 100%);
+      }
+    }
+    .main-section-vector {
+      display: none;
+    }
+    .main-information-rug-image {
+        display: none;
+      }
+    .main-information-undercover-image {
+      position: absolute;
+      top: 77px;
+      left: -23px;
+      width: 365px;
+      height: 255px;
+      background-size: contain;
+      transform: rotate(180deg);
+    }
+  }
 }
 
