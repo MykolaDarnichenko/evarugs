@@ -459,3 +459,32 @@ footer {
   right: 116px;
 }
 
+
+@media screen and (max-width: 320px) {
+  header {
+    padding: 22px 0 11px;
+    margin: 0;
+    flex-direction: column;
+  .header-phones img,
+  .header-location img {
+    display: none;
+  } 
+  .header-phones {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    a {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 68%;
+    }
+  }
+  .header-location {
+    margin: 8px auto 11px;
+  }
+  .header-instagram {
+    display: none;
+  }
+}
+}
+

@@ -437,4 +437,32 @@ footer {
   right: 116px;
 }
 
+@media screen and (max-width: 320px) {
+  header {
+    padding: 22px 0 11px;
+    margin: 0;
+    flex-direction: column;
+  }
+  header .header-phones img,
+  header .header-location img {
+    display: none;
+  }
+  header .header-phones {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+  }
+  header .header-phones a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 68%;
+  }
+  header .header-location {
+    margin: 8px auto 11px;
+  }
+  header .header-instagram {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
