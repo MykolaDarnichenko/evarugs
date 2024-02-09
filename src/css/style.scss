@@ -176,6 +176,22 @@ header {
     font-weight: 900;
     line-height: 23px;
     text-transform: uppercase;
+    position: relative; // delete this one
+  }
+
+  // delete bottom 
+  button:hover {
+    cursor: pointer;
+  }
+  button:active::after {
+    position: absolute;
+    top: 60px;
+    left: 30px;
+    content: "It doesn`t work now";
+    text-transform:capitalize;
+    color: $primary-color;
+    width: 100px;
+    height: 100px;
   }
 }
 

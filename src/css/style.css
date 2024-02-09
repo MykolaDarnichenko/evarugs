@@ -163,6 +163,20 @@ header .header-instagram span {
   font-weight: 900;
   line-height: 23px;
   text-transform: uppercase;
+  position: relative;
+}
+.main-information-order button:hover {
+  cursor: pointer;
+}
+.main-information-order button:active::after {
+  position: absolute;
+  top: 60px;
+  left: 30px;
+  content: "It doesn`t work now";
+  text-transform: capitalize;
+  color: #000;
+  width: 100px;
+  height: 100px;
 }
 
 .main-information-undercover-image {
