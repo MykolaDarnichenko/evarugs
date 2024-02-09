@@ -627,7 +627,7 @@ footer {
     margin: 0;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 14px;
     text-align: center;
   }
   .footer-contact-phones h3,
@@ -636,6 +636,7 @@ footer {
     font-weight: 700;
     font-size: 14px;
     margin-bottom: 15px;
+    margin-top: 0;
   }
   .footer-contact-phones {
     order: 1;
@@ -643,7 +644,9 @@ footer {
   .footer-contact-phones a {
     font-weight: 300;
     font-size: 14px;
-    line-height: 68%;
+  }
+  .footer-contact-phones ul {
+    margin-bottom: 0;
   }
   .footer-social-sites {
     order: 2;
