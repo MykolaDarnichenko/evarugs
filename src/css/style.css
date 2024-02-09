@@ -588,6 +588,39 @@ footer {
   .about-rugs .about-rugs-vector {
     display: none;
   }
+  .review {
+    margin: 0;
+    padding: 97px 0 49px;
+    height: auto;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 86px;
+    overflow: visible;
+    align-items: center;
+  }
+  .review-card {
+    position: relative;
+    margin: 0;
+    padding: 0 20px;
+    width: 267px;
+    height: 210px;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.25);
+  }
+  .review-card .review-text {
+    font-weight: 300;
+    font-size: 12px;
+    margin-top: 70px;
+    margin-bottom: 7px;
+  }
+  .review-card .review-text:after {
+    width: 130px;
+    margin-top: 17px;
+  }
+  .review-card .review-author {
+    font-weight: 300;
+    font-size: 13px;
+    margin-top: 14px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
