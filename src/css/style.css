@@ -299,6 +299,12 @@ header .header-instagram span {
   z-index: 0;
 }
 
+.tablet-about-rugs-vector1,
+.tablet-about-rugs-vector2,
+.tablet-about-rugs-vector3 {
+  display: none;
+}
+
 .review {
   background: linear-gradient(141.88deg, rgba(212, 20, 90, 0.25) 0.926%, rgba(46, 49, 146, 0.25) 104.886%);
   height: 357px;
@@ -568,6 +574,91 @@ footer {
     top: 520px;
     left: 85.98px;
   }
+  .about-rugs {
+    padding: 0 78px;
+  }
+  .about-rugs h2 {
+    font-weight: 400;
+    font-size: 40px;
+    margin-bottom: 70px;
+  }
+  .about-rugs-flex {
+    flex-direction: column;
+    align-items: center;
+    gap: 61px;
+    margin-bottom: 124px;
+  }
+  .about-rugs-card {
+    max-width: 594px;
+  }
+  .about-rugs-card img {
+    max-height: 172px;
+    margin-bottom: 10px;
+    background-size: contain;
+  }
+  .about-rugs-card h3, .about-rugs-card p {
+    padding: 0;
+    margin-left: 38px;
+    margin-right: 57px;
+  }
+  .about-rugs-card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .about-rugs-card p {
+    font-weight: 300;
+    margin-top: 0;
+    font-size: 14px;
+    margin-bottom: 19px;
+  }
+  .about-rugs-vector {
+    display: none;
+  }
+  .tablet-about-rugs-vector1 {
+    width: 176.71px;
+    height: 199.49px;
+    display: block;
+    position: absolute;
+    top: 272px;
+    left: -52px;
+  }
+  .tablet-about-rugs-vector2 {
+    width: 85.6px;
+    height: 96.99px;
+    display: block;
+    position: absolute;
+    top: 426.57px;
+    left: 102.4px;
+  }
+  .tablet-about-rugs-vector3 {
+    display: block;
+    position: absolute;
+    bottom: -170px;
+    right: 0;
+  }
+  .review {
+    padding: 0 25px 72px;
+    height: auto;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .review-card {
+    max-width: 536px;
+    min-height: 187px;
+  }
+  .review-card-first,
+  .review-card-last {
+    opacity: 1;
+  }
+  .review-text {
+    font-weight: 300;
+    font-size: 18px;
+  }
+  .review-author {
+    font-weight: 300;
+    font-size: 13px;
+  }
 }
 @media screen and (max-width: 420px) {
   header {
@@ -681,16 +772,22 @@ footer {
     align-items: center;
     gap: 30px;
     margin-bottom: 103px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
   .about-rugs .about-rugs-card {
-    width: 264px;
-    height: 363px;
+    max-width: 264px;
+    min-height: 363px;
     padding-bottom: 21.71px;
   }
   .about-rugs .about-rugs-card img {
-    width: 264px;
+    max-width: 264px;
     height: 174px;
     margin-bottom: 0;
+  }
+  .about-rugs .about-rugs-card h3, .about-rugs .about-rugs-card p {
+    margin-left: 16px;
+    margin-right: 25px;
   }
   .about-rugs .about-rugs-card h3 {
     margin-top: 5px;
@@ -704,7 +801,10 @@ footer {
     font-size: 14px;
     margin-bottom: 0;
   }
-  .about-rugs .about-rugs-vector {
+  .about-rugs .about-rugs-vector,
+  .about-rugs .tablet-about-rugs-vector1,
+  .about-rugs .tablet-about-rugs-vector2,
+  .about-rugs .tablet-about-rugs-vector3 {
     display: none;
   }
   .review {
