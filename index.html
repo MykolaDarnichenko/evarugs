@@ -37,17 +37,6 @@
         </ul>
       </nav>
       </div>
-
-      <script>
-        function openOrderForm() {
-            document.getElementById('order-form').style.display = "block";
-            document.getElementById('blur').style.display = "block";
-          }
-        function closeOrderForm() {
-            document.getElementById('order-form').style.display = "none";
-            document.getElementById('blur').style.display = "none";
-          }
-      </script>
   
       <div class="main-information-order">
       <h1>Инновационные коврики для автомобиля</h1>
@@ -68,13 +57,16 @@
     <div class="blur" id="blur">
     <div class="order-form" id="order-form">
       <img id="order-form-cross-mark" class="order-form-cross-mark" onclick="closeOrderForm()" src="./src/img/order-form-cross-mark.svg" alt="Cross mark">
-      <form method="POST" action="./sendTelegram.php">
+      <form id="tg">
         <fieldset>
           <legend>Форма заявки</legend>
           <div class="order-form-grid">
             <input type="text" name="name" id="form-name" placeholder="Ваше имя">
             <input type="email" name="email" id="form-email" placeholder="Ваш e-mail">
             <textarea name="message" id="form-message" cols="30" rows="10" placeholder="Ваше сообщение (марка автомобиля, цвет ковриков, номер телефона)"></textarea>
+          </div>
+          <div id="alert-success" class="alert-success">
+            <p>Сообщение отправлено!</p>
           </div>
           <button type="submit" id="form-button">Отправить</button>
         </fieldset>
@@ -87,6 +79,55 @@
       <img class="order-form-vector-6" src="./src/img/order-form-vector.svg" alt="Vector">
     </div>
     </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+      <script>
+        function openOrderForm() {
+          document.getElementById('order-form').style.display = "block";
+          document.getElementById('blur').style.display = "block";
+        }
+        function closeOrderForm() {
+          document.getElementById('order-form').style.display = "none";
+          document.getElementById('blur').style.display = "none";
+        }
+
+        const TOKEN = "6707080081:AAHeg1POKu3K__gfwvJ2nT2X-nE79AfxxF8";
+        const CHAT_ID = "-1002012073875";
+        const URI_API = `https://api.telegram.org/bot${ TOKEN }/sendMessage`;
+
+        document.getElementById('tg').addEventListener('submit', function (e) {
+          e.preventDefault();
+
+          let message = `<b>Заявка с сайта EvaRugs+\n</b>`;
+          message += `<b>Имя отправителя: </b> ${ this.name.value }\n`;
+          message += `<b>E-mail отправителя: </b> ${this.email.value}\n`;
+          message += `<b>Сообщение: </b> ${this.message.value}`;
+
+          axios.post(URI_API, {
+            chat_id: CHAT_ID,
+            parse_mode: 'html',
+            text: message
+          })
+          .then((res) => {
+            this.name.value = '';
+            this.email.value = '';
+            this.message.value = '';
+
+            document.getElementById('alert-success').style.display = 'flex';
+            setInterval(() => {
+              closeOrderForm();              
+            }, 3000);
+          })
+          .catch((err) => {
+            console.warn(err);
+          })
+          .finally(() => {
+            console.log('Конец');
+          })
+        })
+      </script>
+
+
     <section class="about-rugs" id="about-rugs">
       <h2>Что такое <span>EVA</span> коврики?</h2>
       <div class="about-rugs-flex">

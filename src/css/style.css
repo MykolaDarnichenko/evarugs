@@ -395,6 +395,20 @@ header .header-instagram span {
   border-radius: 9px;
 }
 
+#alert-success {
+  display: none;
+  max-width: 372px;
+  height: 41px;
+  background: greenyellow;
+  color: #000;
+  font-weight: 400;
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  margin: -20px auto 20px;
+}
+
 #form-button {
   display: block;
   margin-left: auto;
