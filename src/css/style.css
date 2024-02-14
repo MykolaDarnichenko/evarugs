@@ -296,6 +296,8 @@ header .header-instagram span {
 }
 
 .order-form {
+  overflow: hidden;
+  position: relative;
   display: none;
   padding: 42px 0 45px;
   border-radius: 15px;
@@ -408,6 +410,72 @@ header .header-instagram span {
 
 #form-button:hover {
   cursor: pointer;
+}
+
+.order-form-vector-1 {
+  display: block;
+  position: absolute;
+  width: 298.74px;
+  height: 336.75px;
+  bottom: -50px;
+  left: -150px;
+  z-index: -1;
+  transform: rotate(27.16deg);
+}
+
+.order-form-vector-2 {
+  display: block;
+  position: absolute;
+  width: 68.66px;
+  height: 77.41px;
+  bottom: 150px;
+  left: 160px;
+  z-index: -1;
+  transform: rotate(27.16deg);
+}
+
+.order-form-vector-3 {
+  display: block;
+  position: absolute;
+  width: 144.87px;
+  height: 163.28px;
+  left: 150px;
+  bottom: -61.92px;
+  z-index: -1;
+  transform: rotate(27.16deg);
+}
+
+.order-form-vector-4 {
+  display: block;
+  position: absolute;
+  width: 144.87px;
+  height: 163.28px;
+  right: 190px;
+  top: -35px;
+  z-index: -1;
+  transform: rotate(-167.84deg);
+}
+
+.order-form-vector-5 {
+  display: block;
+  position: absolute;
+  width: 68.66px;
+  height: 77.41px;
+  right: 180px;
+  top: 160px;
+  z-index: -1;
+  transform: rotate(-167.84deg);
+}
+
+.order-form-vector-6 {
+  display: block;
+  position: absolute;
+  width: 298.74px;
+  height: 336.75px;
+  right: -130px;
+  top: -70px;
+  z-index: -1;
+  transform: rotate(-167.84deg);
 }
 
 .review {
@@ -739,6 +807,74 @@ footer {
     position: absolute;
     bottom: -170px;
     right: 0;
+  }
+  .order-form {
+    min-height: auto;
+    padding: 43px 25px 37px;
+    max-width: 635px;
+  }
+  .order-form legend {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .order-form-grid {
+    margin-top: 0;
+    margin-bottom: 0;
+    display: flex;
+    max-width: 432px;
+    flex-direction: column;
+    gap: 22px;
+    align-items: center;
+  }
+  #form-name,
+  #form-email {
+    width: 90%;
+    height: 41px;
+  }
+  #form-message {
+    width: 90%;
+    height: 95px;
+  }
+  #form-button {
+    width: 137px;
+    height: 34px;
+    margin-top: 22px;
+  }
+  .order-form-vector-1 {
+    width: 150px;
+    height: 185px;
+    bottom: -30px;
+    left: -70px;
+  }
+  .order-form-vector-2 {
+    width: 35px;
+    height: 42px;
+    bottom: 150px;
+    left: 10px;
+  }
+  .order-form-vector-3 {
+    width: 73px;
+    height: 90px;
+    bottom: -25px;
+    left: 90px;
+  }
+  .order-form-vector-4 {
+    width: 50px;
+    height: 64px;
+    top: 15px;
+    right: 65px;
+  }
+  .order-form-vector-5 {
+    width: 80px;
+    height: 103px;
+    top: -70px;
+    right: -5px;
+  }
+  .order-form-vector-6 {
+    width: 142px;
+    height: 183px;
+    top: 10px;
+    right: -80px;
   }
   .review {
     padding: 0 25px 72px;
