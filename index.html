@@ -114,8 +114,9 @@
             this.message.value = '';
 
             document.getElementById('alert-success').style.display = 'flex';
-            setInterval(() => {
-              closeOrderForm();              
+            setTimeout(() => {
+              closeOrderForm();
+              document.getElementById('alert-success').style.display = 'none';       
             }, 3000);
           })
           .catch((err) => {
