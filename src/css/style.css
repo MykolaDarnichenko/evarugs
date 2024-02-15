@@ -1036,50 +1036,11 @@ footer {
     background-size: contain;
     transform: rotate(180deg);
   }
-  .order-form {
-    padding-top: 27px;
-    padding-bottom: 25px;
-    height: min-content;
-  }
-  .order-form legend {
-    font-weight: 500;
-    font-size: 15px;
-    margin-bottom: 15px;
-  }
   .order-form-cross-mark {
     top: 15px;
     right: 15px;
-    width: 12px;
-    height: 12px;
-  }
-  .order-form-grid {
-    max-width: 212px;
-    gap: 19px;
-  }
-  #form-name,
-  #form-email {
-    text-align: center;
-    height: 20px;
-    font-weight: 300;
-    font-size: 10px;
-  }
-  #form-message {
-    text-align: center;
-    height: 95px;
-    font-weight: 300;
-    font-size: 10px;
-  }
-  #form-button {
-    margin-top: 19px;
-    margin-bottom: 0;
-    border-radius: 4px;
-    width: 58px;
-    height: 18px;
-    font-weight: 400;
-    font-size: 9px;
-  }
-  .order-form-vector {
-    display: none;
+    width: 15px;
+    height: 15px;
   }
   .about-rugs {
     margin-top: -23px;
@@ -1204,6 +1165,60 @@ footer {
   }
   .footer-vector-first,
   .footer-vector-second {
+    display: none;
+  }
+}
+@media screen and (max-width: 372px) {
+  .order-form {
+    padding-top: 27px;
+    padding-bottom: 25px;
+    height: min-content;
+  }
+  .order-form legend {
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+  .order-form-cross-mark {
+    top: 15px;
+    right: 15px;
+    width: 12px;
+    height: 12px;
+  }
+  .order-form-grid {
+    max-width: 212px;
+    gap: 19px;
+  }
+  #form-name,
+  #form-email {
+    text-align: center;
+    height: 20px;
+    font-weight: 300;
+    font-size: 10px;
+  }
+  #form-message {
+    text-align: center;
+    height: 95px;
+    font-weight: 300;
+    font-size: 10px;
+  }
+  #form-button {
+    margin-top: 19px;
+    margin-bottom: 0;
+    border-radius: 4px;
+    width: 58px;
+    height: 18px;
+    font-weight: 400;
+    font-size: 9px;
+  }
+  #alert-success {
+    margin-top: 10px;
+    max-width: 212px;
+    padding: 5px;
+    z-index: 5;
+    height: 20px;
+  }
+  .order-form-vector {
     display: none;
   }
 }
