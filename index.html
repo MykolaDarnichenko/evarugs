@@ -61,9 +61,9 @@
         <fieldset>
           <legend>Форма заявки</legend>
           <div class="order-form-grid">
-            <input type="text" name="name" id="form-name" placeholder="Ваше имя">
-            <input type="email" name="email" id="form-email" placeholder="Ваш e-mail">
-            <textarea name="message" id="form-message" cols="30" rows="10" placeholder="Ваше сообщение (марка автомобиля, цвет ковриков, номер телефона)"></textarea>
+            <input type="text" name="name" id="form-name" placeholder="Ваше имя" required>
+            <input type="email" name="email" id="form-email" placeholder="Ваш e-mail" required>
+            <textarea name="message" id="form-message" cols="30" rows="10" placeholder="Ваше сообщение (марка автомобиля, цвет ковриков, номер телефона)" required></textarea>
           </div>
           <div id="alert-success" class="alert-success">
             <p>Сообщение отправлено!</p>
@@ -71,24 +71,28 @@
           <button type="submit" id="form-button">Отправить</button>
         </fieldset>
       </form>
-      <img class="order-form-vector-1" src="./src/img/order-form-vector.svg" alt="Vector">
-      <img class="order-form-vector-2" src="./src/img/order-form-vector.svg" alt="Vector">
-      <img class="order-form-vector-3" src="./src/img/order-form-vector.svg" alt="Vector">
-      <img class="order-form-vector-4" src="./src/img/order-form-vector.svg" alt="Vector">
-      <img class="order-form-vector-5" src="./src/img/order-form-vector.svg" alt="Vector">
-      <img class="order-form-vector-6" src="./src/img/order-form-vector.svg" alt="Vector">
+      <img class="order-form-vector order-form-vector-1" src="./src/img/order-form-vector.svg" alt="Vector">
+      <img class="order-form-vector order-form-vector-2" src="./src/img/order-form-vector.svg" alt="Vector">
+      <img class="order-form-vector order-form-vector-3" src="./src/img/order-form-vector.svg" alt="Vector">
+      <img class="order-form-vector order-form-vector-4" src="./src/img/order-form-vector.svg" alt="Vector">
+      <img class="order-form-vector order-form-vector-5" src="./src/img/order-form-vector.svg" alt="Vector">
+      <img class="order-form-vector order-form-vector-6" src="./src/img/order-form-vector.svg" alt="Vector">
     </div>
     </div>
 
       <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
       <script>
         function openOrderForm() {
-          document.getElementById('order-form').style.display = "block";
-          document.getElementById('blur').style.display = "block";
+            setTimeout(() => {
+            document.getElementById('order-form').style.display = "block";
+            document.getElementById('blur').style.display = "block";
+          }, 200);
         }
         function closeOrderForm() {
-          document.getElementById('order-form').style.display = "none";
-          document.getElementById('blur').style.display = "none";
+          setTimeout(() => {
+            document.getElementById('order-form').style.display = "none";
+            document.getElementById('blur').style.display = "none";
+          }, 200);
         }
 
         const TOKEN = "6707080081:AAHeg1POKu3K__gfwvJ2nT2X-nE79AfxxF8";
@@ -126,6 +130,10 @@
             console.log('Конец');
           })
         })
+
+            document.addEventListener('keydown', event => {
+              if (event.code === 'Escape') closeOrderForm();
+            });
       </script>
 
 
