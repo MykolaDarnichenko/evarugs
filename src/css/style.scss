@@ -1207,11 +1207,11 @@ footer {
       padding-right: 25px;
     }
     .about-rugs-card {
-      max-width: 380px;
+      max-width: 380px; // not stoke value
       min-height: 363px;
       padding-bottom: 21.71px;
       img {
-        max-width: 264px;
+        max-width: 380px; // and here
         height: 174px;
         margin-bottom: 0;
       }
