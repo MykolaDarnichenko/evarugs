@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./src/css/style.css">
   <title>EVARUGS+</title>
+
+  <!-- swiper bottom -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 </head>
 <body>
   
@@ -54,6 +59,7 @@
       <img src="./src/img/main-vector5.svg" alt="Vector" class="main-section-vector main-section-vector-5">   
     </section>
 
+    
     <div class="blur" id="blur">
     <div class="order-form" id="order-form">
       <img id="order-form-cross-mark" class="order-form-cross-mark" onclick="closeOrderForm()" src="./src/img/order-form-cross-mark.svg" alt="Cross mark">
@@ -168,9 +174,58 @@
       <img class="tablet-about-rugs-vector3" src="./src/img/tablet-about-rugs-for-ending.svg" alt="Vector">
     </section>
 
-    <section class="review" id="review">
-      <div class="review-card review-card-first">
+
+  <!-- <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="https://miro.medium.com/max/1400/1*BR2RiTRoYor9xSrzEgxLWQ.jpeg"></div>
+      <div class="swiper-slide"><img src="https://fireseo.ru/wp-content/uploads/2022/06/programming.jpeg"></div>
+      <div class="swiper-slide"><img
+          src="https://img.freepik.com/free-vector/neon-lights-background-theme_52683-44625.jpg?w=2000"></div>
+      <div class="swiper-slide"><img src="https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg
+            "></div>
+      <div class="swiper-slide"><img
+          src="https://img.freepik.com/premium-vector/minimalist-shape-background_112769-210.jpg"></div>
+    </div>
+    <div class="swiper-pagination"></div> -->
+  <!-- </div> -->
+  <!-- <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div> -->
+
+      <!-- <style>
+        .review {
+          position: relative;
+          overflow-x: visible;
+        }
+        .swiper {
+          display: flex;
+          margin: 0 60px;
+          max-width: 736px;
+          height: min-content;
+        }
       
+        .swiper-slide {
+          width: 100%;
+          flex-shrink: 0;
+          height: min-content;
+        }
+
+        .swiper-button-next, .swiper-rtl .swiper-button-prev{
+        right: 20px !important; 
+        left: auto;
+    }
+    .swiper-button-prev, .swiper-rtl .swiper-button-next{
+      left: 20px !important; 
+      right: auto;
+    }
+      </style> -->
+
+
+
+    <section class="review" id="review">
+      <div class="swiper mySwiper">
+<div class="swiper-wrapper">
+      <div class="review-card review-card-first swiper-slide">
+  
         <div class="masked masked-first">
           <img src="./src/img/review-photo-vector.svg" alt="Vector">
         </div>
@@ -180,8 +235,8 @@
         <p class="review-author">Константин В.</p>
       </div>
 
-      <div class="review-card">
 
+      <div class="review-card swiper-slide">
         <div class="masked">
           <img src="./src/img/review-photo-vector.svg" alt="Vector">
         </div>
@@ -191,7 +246,8 @@
         <p class="review-author">Вера К.</p>
       </div>
 
-      <div class="review-card review-card-last">
+
+      <div class="review-card review-card-last swiper-slide">
       
         <div class="masked masked-last">
           <img src="./src/img/review-photo-vector.svg" alt="Vector">
@@ -200,9 +256,48 @@
         <p class="review-text">Спасибо, все приехало, поставил. Результатом доволен, в машине супер! Заказывал на Ниссан.</p>
         <p class="review-author">Николай П.</p>
       </div>
-
+</div>
+</div>
+<div class="swiper-button-next"></div>
+<div class="swiper-button-prev"></div>
     </section>
   </main>
+
+
+    <script>
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const width = window.innerWidth
+    if (width > 768) {
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        // pagination: {
+        //   el: ".swiper-pagination",
+        // },
+        //mousewheel: true,
+        keyboard: true,
+      });
+    }
+  })
+
+
+        //     var swiper = new Swiper(".mySwiper", {
+        //       spaceBetween: 30,
+        //       navigation: {
+        //         nextEl: ".swiper-button-next",
+        //         prevEl: ".swiper-button-prev",
+        //       },
+        //       // pagination: {
+        //       //   el: ".swiper-pagination",
+        //       // },
+        //       //mousewheel: true,
+        //       keyboard: true,
+        // });
+    </script>
 
   <footer id="contacts">
     <div class="footer-social-sites">

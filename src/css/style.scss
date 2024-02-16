@@ -503,12 +503,15 @@ header {
 
 
 .review {
+  padding-left: 50px;
+  padding-right: 50px;
+  overflow-x: hidden;
+  position: relative;
   background: linear-gradient(141.88deg, rgba(212, 20, 90, 0.25) 0.926%, rgba(46, 49, 146, 0.25) 104.886%);
   height: 357px;
   display: flex;
   justify-content: center;
   gap: 70px;
-  overflow-x: hidden;
 }
 
 .review-card {
@@ -516,10 +519,10 @@ header {
   flex-shrink: 0;
   margin-top: 98px;
   padding: 63px 44px 0;
-  position: relative;
+  //position: relative;
   border-radius: 9px;
-  width: 536px;
-  height: 187px;
+  max-width: 836px;
+  height: min-content;
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.25);
   background: #fff;
   text-align: center;
@@ -539,6 +542,22 @@ header {
     }
   }
 }
+
+
+ .swiper {
+   max-width: 836px;
+   height: min-content;
+ }
+
+ .swiper-button-next {
+   right: 15px !important;
+   left: auto;
+ }
+
+ .swiper-button-prev {
+   left: 15px !important;
+   right: auto;
+ }
 
 .review-text {
   margin: 0;
@@ -569,7 +588,7 @@ header {
 
 .review-card-first,
 .review-card-last {
-  opacity: 0.4;
+  opacity: 1;
   padding-top: 77px;
 }
 
@@ -662,7 +681,6 @@ footer {
   top: 19px;
   right: 116px;
 }
-
 
 @media screen and (max-width: 768px) {
   header {
@@ -946,16 +964,16 @@ footer {
 
 
   .review {
+    overflow: visible;
     padding: 0 25px 72px;
-    height: auto;
-    align-items: center;
-    flex-direction: column;
+    // align-items: center;
+    // flex-direction: column;
     gap: 20px;
+    height: auto;
   }
 
   .review-card {
     max-width: 536px;
-    min-height: 187px;
   }
 
   .review-card-first,
@@ -972,6 +990,19 @@ footer {
     font-weight: 300;
     font-size: 13px;
   }
+
+  // .swiper {
+  //   max-width: 536px;
+  // }
+  .swiper-wrapper {
+    flex-direction: column;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none !important;
+  }
+
 
   footer {
     padding: 95px 25px 48px;
@@ -1218,11 +1249,21 @@ footer {
     overflow: visible;
     align-items: center;
   }
+
+  .swiper {
+    overflow: visible!important;
+  }
+
+  .swiper-wrapper {
+    flex-direction: column;
+    gap: 86px;
+  }
+
   .review-card {
     position: relative;
     margin: 0;
     padding: 0 20px;
-    width: 267px;
+    max-width: 380px;
     height: 210px;
     opacity: 1;
     box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.25);
