@@ -1208,7 +1208,7 @@ footer {
     }
     .about-rugs-card {
       max-width: 380px; // not stoke value
-      min-height: 363px;
+      height: min-content; // here too
       padding-bottom: 21.71px;
       img {
         max-width: 380px; // and here

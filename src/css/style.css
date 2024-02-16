@@ -1084,7 +1084,7 @@ footer {
   }
   .about-rugs .about-rugs-card {
     max-width: 380px;
-    min-height: 363px;
+    height: min-content;
     padding-bottom: 21.71px;
   }
   .about-rugs .about-rugs-card img {
