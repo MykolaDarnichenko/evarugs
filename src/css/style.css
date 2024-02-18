@@ -496,7 +496,7 @@ header .header-instagram span {
 .review {
   padding-left: 50px;
   padding-right: 50px;
-  overflow-x: hidden;
+  overflow-x: visible;
   position: relative;
   background: linear-gradient(141.88deg, rgba(212, 20, 90, 0.25) 0.926%, rgba(46, 49, 146, 0.25) 104.886%);
   height: 357px;
@@ -511,7 +511,6 @@ header .header-instagram span {
   margin-top: 98px;
   padding: 63px 44px 0;
   border-radius: 9px;
-  max-width: 836px;
   height: min-content;
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.25);
   background: #fff;
@@ -534,8 +533,13 @@ header .header-instagram span {
 }
 
 .swiper {
-  max-width: 836px;
+  border: 1px solid green;
   height: min-content;
+  width: 100%;
+}
+
+.swiper-slide {
+  max-width: 836px !important;
 }
 
 .swiper-button-next {
