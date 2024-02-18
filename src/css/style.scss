@@ -519,6 +519,9 @@ header {
 .review-content {
   position: relative;
   padding: 25px 50px 100px;
+  display: flex;
+  max-width: 1440px;
+  margin: auto;
   // display: flex;
   // align-items: center;
   // gap: 70px;
@@ -997,19 +1000,13 @@ header {
   }
 
   .review-content {
-    padding: 0;
-    align-items: center;
+    padding: 25px 25px 50px;
   }
 
-  
   .swiper-wrapper {
-    padding: 0;
-    border: 1px solid red;
-    width: 90%!important;
     display: flex;
     flex-direction: column;
     gap: 30px;
-    margin: auto!important;
     align-items: center;
 }
   
@@ -1261,13 +1258,11 @@ header {
   }
 
   .swiper-wrapper {
-    width: 82%!important;
-    flex-direction: column;
     gap: 86px;
   }
 
   .review-content {
-    margin: 0;
+   //margin: 0;
       padding: 97px 15px 49px;
       height: auto;
       flex-direction: column;
@@ -1275,6 +1270,7 @@ header {
       gap: 86px;
       align-items: center;
   .review-card {
+    overflow-y: visible;
     position: relative;
     margin: 0;
     padding: 0 20px;

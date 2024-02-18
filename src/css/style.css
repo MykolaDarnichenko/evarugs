@@ -510,6 +510,9 @@ header {
 .review-content {
   position: relative;
   padding: 25px 50px 100px;
+  display: flex;
+  max-width: 1440px;
+  margin: auto;
 }
 
 .review-card {
@@ -935,17 +938,12 @@ header {
     font-size: 13px;
   }
   .review-content {
-    padding: 0;
-    align-items: center;
+    padding: 25px 25px 50px;
   }
   .swiper-wrapper {
-    padding: 0;
-    border: 1px solid red;
-    width: 90% !important;
     display: flex;
     flex-direction: column;
     gap: 30px;
-    margin: auto !important;
     align-items: center;
   }
   .swiper-button-next,
@@ -1134,12 +1132,9 @@ header {
     overflow: visible !important;
   }
   .swiper-wrapper {
-    width: 82% !important;
-    flex-direction: column;
     gap: 86px;
   }
   .review-content {
-    margin: 0;
     padding: 97px 15px 49px;
     height: auto;
     flex-direction: column;
@@ -1148,6 +1143,7 @@ header {
     align-items: center;
   }
   .review-content .review-card {
+    overflow-y: visible;
     position: relative;
     margin: 0;
     padding: 0 20px;
