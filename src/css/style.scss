@@ -32,7 +32,12 @@ body {
   color: $primary-color;
   box-sizing: border-box;
   margin: 0;
+}
+
+.content {
+  width: 100%;
   max-width: 1920px;
+  margin: auto;
 }
 
 header {
@@ -969,7 +974,6 @@ footer {
 
 
   .review {
-    overflow: visible;
     padding: 0 25px 72px;
     // align-items: center;
     // flex-direction: column;
@@ -1001,6 +1005,7 @@ footer {
   // }
   .swiper-wrapper {
     flex-direction: column;
+    align-items: center;
   }
 
   .swiper-button-next,
@@ -1398,3 +1403,4 @@ footer {
         display: none;
       }
 }
+

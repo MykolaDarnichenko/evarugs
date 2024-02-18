@@ -23,7 +23,12 @@ body {
   color: #000;
   box-sizing: border-box;
   margin: 0;
+}
+
+.content {
+  width: 100%;
   max-width: 1920px;
+  margin: auto;
 }
 
 header {
@@ -913,7 +918,6 @@ footer {
     right: -80px;
   }
   .review {
-    overflow: visible;
     padding: 0 25px 72px;
     gap: 20px;
     height: auto;
@@ -935,6 +939,7 @@ footer {
   }
   .swiper-wrapper {
     flex-direction: column;
+    align-items: center;
   }
   .swiper-button-next,
   .swiper-button-prev {
