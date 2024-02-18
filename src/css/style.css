@@ -23,6 +23,7 @@ body {
   color: #000;
   box-sizing: border-box;
   margin: 0;
+  max-width: 1920px;
 }
 
 header {
