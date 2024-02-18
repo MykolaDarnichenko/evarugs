@@ -997,18 +997,22 @@ header {
   }
 
   .review-content {
-    padding: 10px 25px 50px;
+    padding: 0;
     align-items: center;
   }
 
+  
   .swiper-wrapper {
+    padding: 0;
     border: 1px solid red;
     width: 90%!important;
     display: flex;
     flex-direction: column;
     gap: 30px;
+    margin: auto!important;
     align-items: center;
 }
+  
 
   .swiper-button-next,
   .swiper-button-prev {
@@ -1257,6 +1261,7 @@ header {
   }
 
   .swiper-wrapper {
+    width: 82%!important;
     flex-direction: column;
     gap: 86px;
   }
