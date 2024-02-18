@@ -36,16 +36,19 @@ body {
 
 .content {
   width: 100%;
-  max-width: 1920px;
+  max-width: 1440px;
   margin: auto;
 }
 
 header {
   background: linear-gradient(224.42deg, rgba(46, 49, 146, 0.7) 0%, rgba(212, 20, 90, 0.7) 98.165%);
+}
+
+.header {
   display: flex;
   color: $second-color;
 }
-header {
+.header {
   .header-phones {
     margin-left: 128px;
     margin-top: 31px;
@@ -509,14 +512,15 @@ header {
 
 
 .review {
-  padding-left: 50px;
-  padding-right: 50px;
-  position: relative;
   background: linear-gradient(141.88deg, rgba(212, 20, 90, 0.25) 0.926%, rgba(46, 49, 146, 0.25) 104.886%);
-  height: 357px;
-  display: flex;
-  justify-content: center;
-  gap: 70px;
+}
+
+.review-content {
+  padding: 40px 50px;
+  position: relative;
+  // display: flex;
+  // align-items: center;
+  // gap: 70px;
 }
 
 .review-card {
@@ -548,9 +552,7 @@ header {
   }
 }
 
-
  .swiper {
-  align-items: stretch;
    height: min-content;
    width: 100%;
  }
@@ -602,7 +604,7 @@ header {
   padding-top: 77px;
 }
 
-.review{
+.review-content {
 .masked-last {
   background-image: url('../img/otz3_1.jpg');
 }
@@ -611,7 +613,7 @@ header {
 }
 }
 
-footer {
+.footer {
   position: relative;
   display: flex;
   justify-content: center;
@@ -693,7 +695,7 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  header {
+  .header {
     gap: 200px;
     justify-content: right;
     padding: 30px 0;
@@ -973,16 +975,13 @@ footer {
   }
 
 
-  .review {
-    padding: 0 25px 72px;
-    // align-items: center;
-    // flex-direction: column;
-    gap: 20px;
-    height: auto;
+  .review-content {
+    padding: 0 15px 72px;
   }
 
   .review-card {
     max-width: 536px;
+    height: min-content;
   }
 
   .review-card-first,
@@ -1000,13 +999,15 @@ footer {
     font-size: 13px;
   }
 
-  // .swiper {
-  //   max-width: 536px;
-  // }
   .swiper-wrapper {
+    width: 90%!important;
+    display: flex;
     flex-direction: column;
+    gap: 30px;
     align-items: center;
-  }
+    align-content: center;
+    justify-content: center;
+}
 
   .swiper-button-next,
   .swiper-button-prev {
@@ -1014,7 +1015,7 @@ footer {
   }
 
 
-  footer {
+  .footer {
     padding: 95px 25px 48px;
     gap: 50px;
     h3 {
@@ -1043,7 +1044,7 @@ footer {
 }
 
 @media screen and (max-width: 420px) {
-  header {
+  .header {
     padding: 22px 0 11px;
     margin: 0;
     gap: 8px;
@@ -1259,7 +1260,7 @@ footer {
     gap: 86px;
   }
 
-  .review {
+  .review-content {
     margin: 0;
       padding: 97px 15px 49px;
       height: auto;
@@ -1292,7 +1293,7 @@ footer {
     }
   }
 }
-  footer {
+  .footer {
     padding: 42px 0 31px;
     margin: 0;
     flex-direction: column;
