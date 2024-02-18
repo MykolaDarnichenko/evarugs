@@ -506,7 +506,6 @@ header {
 .review {
   padding-left: 50px;
   padding-right: 50px;
-  overflow-x: visible;
   position: relative;
   background: linear-gradient(141.88deg, rgba(212, 20, 90, 0.25) 0.926%, rgba(46, 49, 146, 0.25) 104.886%);
   height: 357px;
@@ -546,12 +545,13 @@ header {
 
 
  .swiper {
+  align-items: stretch;
    height: min-content;
    width: 100%;
  }
 
  .swiper-slide {
-  max-width: 836px!important;
+  height: auto!important;
  }
 
  .swiper-button-next {
