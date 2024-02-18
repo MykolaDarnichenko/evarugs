@@ -1072,7 +1072,7 @@ footer {
 }
   .main-information {
     text-align: center;
-    padding: 26px 0 53px;
+    padding: 26px 15px 53px;
     margin: 0;
     .list-nav {
       display: none;
@@ -1086,17 +1086,17 @@ footer {
       }
       span {
         font-weight: 900;
-        font-size: 18px;
+        font-size: 25px;
       }
     }
     .main-information-order {
       margin: 0;
       padding: 0;
       h1 {
-        max-width: 194px;
+        max-width: 350px;
         margin: 38px auto 8px;
         font-weight: 900;
-        font-size: 25px;
+        font-size: 32px;
         line-height: 100%;
         text-align: center;
       }
@@ -1111,10 +1111,10 @@ footer {
         border: none;
         border-radius: 7px;
         margin-top: 9px;
-        width: 93px;
+        width: 90px;
         height: 28px;
         font-weight: 900;
-        font-size: 10px;
+        font-size: 12px;
         background: linear-gradient(136deg, #b90160 0%, #2e3192 100%);
       }
     }
@@ -1200,7 +1200,7 @@ footer {
     h2 {
       margin-top: 0;
       font-weight: 400;
-      font-size: 20px;
+      font-size: 28px;
       margin-bottom: 54px;
     }
     .about-rugs-flex {
@@ -1208,8 +1208,8 @@ footer {
       align-items: center;
       gap: 30px;
       margin-bottom: 103px;
-      padding-left: 25px;
-      padding-right: 25px;
+      padding-left: 15px;
+      padding-right: 15px;
     }
     .about-rugs-card {
       max-width: 380px; // not stoke value
@@ -1244,16 +1244,6 @@ footer {
       display: none;
     }
   }
-  .review {
-    margin: 0;
-    padding: 97px 0 49px;
-    height: auto;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    gap: 86px;
-    overflow: visible;
-    align-items: center;
-  }
 
   .swiper {
     overflow: visible!important;
@@ -1264,12 +1254,20 @@ footer {
     gap: 86px;
   }
 
+  .review {
+    margin: 0;
+      padding: 97px 15px 49px;
+      height: auto;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      gap: 86px;
+      align-items: center;
   .review-card {
     position: relative;
     margin: 0;
     padding: 0 20px;
-    max-width: 380px;
-    height: 210px;
+    max-width: 400px;
+    height: min-content;
     opacity: 1;
     box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.25);
     .review-text {
@@ -1288,6 +1286,7 @@ footer {
       margin-top: 14px;
     }
   }
+}
   footer {
     padding: 42px 0 31px;
     margin: 0;
